@@ -15,12 +15,17 @@
         <nav>
           <ul>
             <li><a href="./index.html">Главная</a></li>
-            <li><a href="">Услуги</a></li>
-            <li><a href="">О нас</a></li>
-            <li><a href="">Отзывы</a></li>
-            <li><a href="">Контакты</a></li>
-            <li><a href="">+7 (987) 239-38-21</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li>
+              <a href="+79872393821" id="phoneLink" class="don't_active"
+                >+7 (987) 239-38-21</a
+              >
+            </li>
           </ul>
+          <span id="copyMessage" class="message">Номер скопирован!</span>
         </nav>
       </div>
       <div class="line_header"></div>
@@ -46,20 +51,15 @@
           </div>
           <div class="top_perv_icons">
             <div class="top_img1">
-              <img src="./img/top_img1.png" alt="Процесс бурения">
+              <img src="./img/top_img1.png" alt="Процесс бурения" />
             </div>
-            <div class="top_rec1">
-            </div>
-            <div class="top_rec2">
-            </div>
-            <div class="top_rec3">
-            </div>
-            <div class="top_rec4">
-            </div>
-            <div class="top_rec5">
-            </div>
+            <div class="top_rec1"></div>
+            <div class="top_rec2"></div>
+            <div class="top_rec3"></div>
+            <div class="top_rec4"></div>
+            <div class="top_rec5"></div>
             <div class="top_img2">
-              <img src="./img/top_img2.png" alt="Процес аналитики бурения">
+              <img src="./img/top_img2.png" alt="Процес аналитики бурения" />
             </div>
           </div>
         </div>
@@ -69,30 +69,95 @@
           <h2>Почему мы?</h2>
           <div class="cards_sec_poch">
             <div class="card_sec_poch">
-              <img src="./img/icon_sec2_1.png" alt="">
-              <p>Сервисная поддержка
-                12 месяцев</p>
+              <img src="./img/icon_sec2_1.png" alt="" />
+              <p>Сервисная поддержка 12 месяцев</p>
             </div>
             <div class="card_sec_poch">
-              <img src="./img/icon_sec2_2.png" alt="">
+              <img src="./img/icon_sec2_2.png" alt="" />
               <p>Бесплатный Выезд специалиста</p>
             </div>
             <div class="card_sec_poch">
-              <img src="./img/icon_sec2_3.png" alt="">
-              <p>Каждый 10 метр 
-                бурения бесплатно</p>
+              <img src="./img/icon_sec2_3.png" alt="" />
+              <p>Каждый 10 метр бурения бесплатно</p>
             </div>
             <div class="card_sec_poch">
-              <img src="./img/icon_sec2_4.png" alt="">
-              <p>Квалифициро- <br>ванные специалисты</p>
+              <img src="./img/icon_sec2_4.png" alt="" />
+              <p>Квалифициро- <br />ванные специалисты</p>
             </div>
-
           </div>
         </div>
-        
-
-
       </section>
     </main>
+    <button id="scrollToTopBtn" title="Наверх" >
+      <svg
+        width="99"
+        height="99"
+        viewBox="0 0 99 99"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="49.5"
+          cy="49.5"
+          r="48"
+          fill="black"
+          stroke="#FF4C00"
+          stroke-width="3"
+        />
+        <path d="M24 59L50 33L76 59" stroke="#FF4C00" stroke-width="3" />
+      </svg>
+    </button>
+
+    <script>
+      // Находим ссылку с номером телефона и элемент для сообщения
+      const phoneLinkElement = document.getElementById("phoneLink");
+      const copyMessageElement = document.getElementById("copyMessage");
+
+      // Добавляем обработчик события на клик
+      phoneLinkElement.addEventListener("click", function (event) {
+        // Отменяем стандартное поведение ссылки (вызов номера)
+        event.preventDefault();
+
+        // Получаем текст номера телефона
+        const phoneNumber = phoneLinkElement.textContent;
+
+        // Копируем номер в буфер обмена
+        navigator.clipboard
+          .writeText(phoneNumber)
+          .then(() => {
+            // Показываем сообщение
+            copyMessageElement.style.display = "block";
+
+            // Скрываем сообщение через 2 секунды
+            setTimeout(() => {
+              copyMessageElement.style.display = "none";
+            }, 2000);
+          })
+          .catch((err) => {
+            console.error("Не удалось скопировать номер: ", err);
+          });
+      });
+      //-----------------Кнопка_слайдер-----------------//
+      // Находим кнопку
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      // Показываем кнопку, когда пользователь прокрутил страницу вниз
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 300) {
+          // Если прокрутка больше 300px
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      });
+
+      // Плавный скролл наверх при нажатии на кнопку
+      scrollToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth", // Плавная прокрутка
+        });
+      });
+    </script>
   </body>
 </html>

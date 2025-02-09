@@ -26,6 +26,24 @@ body {
   margin: auto;
   padding: 0 40px;
 }
+/* Кнопка слайдер */
+#scrollToTopBtn {
+  border-radius: 100%;
+  display: none; /* Скрываем кнопку по умолчанию */
+  position: fixed; /* Фиксированное позиционирование */
+  bottom: 20px; /* Отступ снизу */
+  right: 10%; /* Отступ справа */
+  z-index: 1000; /* Высокий z-index, чтобы кнопка была поверх других элементов */
+  border: none; /* Убираем рамку */
+  cursor: pointer; /* Курсор в виде указателя */
+  background: none;
+}
+
+#scrollToTopBtn:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--primary); /* Цвет фона при наведении */
+}
+
 /* Шапка сайта */
 header {
   padding: 20px 0;
@@ -56,6 +74,10 @@ header a {
   text-align: center;
 }
 /* Навигация */
+nav {
+  display: flex;
+  justify-content: end;
+}
 nav > ul {
   display: flex;
   gap: 22px;
@@ -75,6 +97,16 @@ nav a:active {
   font-size: 17px;
   color: var(--primary);
 }
+/* Сообщение при копировании */
+.message {
+  color: var(--primary); /* Цвет сообщения */
+  font-weight: bold; /* Жирный текст */
+  display: none;
+  /* Скрываем сообщение по умолчанию */
+  position: fixed;
+  top: 16px;
+  z-index: 1000;
+}
 /* ------------------------------ */
 /* Линия внизу шапки  */
 .line_header {
@@ -83,24 +115,30 @@ nav a:active {
   margin: auto;
   background: var(--contrast);
 }
-/* Адаптивность */
+/* Адаптивность навигации  пот планшет*/
 @media (max-width: 1160px) {
-  .container{
+  .container {
     max-width: 704px;
   }
-  .logo_top{
+  .logo_top {
     width: 90px;
     height: 45px;
     font-size: 20px;
   }
-  nav a{
+  nav a {
     font-size: 12px;
   }
   nav a:hover {
     font-size: 12px;
   }
-  nav a:active{
+  nav a:active {
     font-size: 12px;
+  }
+  .message {
+    font-size: 11px;
+  }
+  .line_header {
+    max-width: 768px;
   }
 }
 
@@ -255,26 +293,31 @@ input[type="number"]::-webkit-outer-spin-button {
   grid-row: 5/9;
   grid-column: 7/10;
 }
-/* Адаптивность */
+/* Адаптивность главной секции под планщет*/
 @media (max-width: 1160px) {
   .top_grid {
-    max-width: 1160px;
+    max-width: 768px;
     margin: auto;
     grid-template: 2/1;
     gap: 0px;
   }
   .top_glav_disp {
+    margin-top: 0px;
     grid-row: 2/3;
+    height: 270px;
   }
-  .top_perv_icons{
-    grid-row: 1/2;
+  .top_perv_icons {
     grid-column: 1/2;
-    max-width: 1160px;
+    max-width: 768px;
     margin: auto;
     padding: 0;
   }
-  
-  
+  .top_glav_disp_p {
+    font-size: 18px;
+  }
+  .top_glav_disp h1 {
+    font-size: 26px;
+  }
 }
 /* Конец главной секции */
 /* Начало второй сукции */
@@ -282,7 +325,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-top: 50px;
   padding-top: 37px;
   height: 429px;
-  background-image: url(/Бурение/img/bg-1.png);
+  background-image: url(/img/bg-1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -322,7 +365,7 @@ h2 {
   text-align: center;
   color: var(--contrast);
 }
-/* Адаптивность */
+/* Адаптивность второй секции под планшет*/
 @media (max-width: 1160px) {
   .pochemy_mi {
     height: 683px;
