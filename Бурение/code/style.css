@@ -293,7 +293,7 @@ input[type="number"]::-webkit-outer-spin-button {
   grid-row: 5/9;
   grid-column: 7/10;
 }
-/* Адаптивность главной секции под планщет*/
+/* Адаптивность главной секции под планшет*/
 @media (max-width: 1160px) {
   .top_grid {
     max-width: 768px;
@@ -370,4 +370,79 @@ h2 {
   .pochemy_mi {
     height: 683px;
   }
+  .pochemy_mi p {
+    font-size: 20px;
+    max-width: 75px;
+  }
+  h2 {
+    font-size: 24px;
+  }
 }
+/* Секчия 3 почему мы */
+.priemysh_sec {
+  padding-top: 50px;
+}
+/* Карточки */
+.cards_sec3 {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 60px;
+}
+.priemysh_sec h2 {
+  margin-bottom: 60px;
+}
+.priemysh_sec h4 {
+  color: var(--contrast);
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.priemysh_sec p {
+  color: var(--contrast);
+  font-weight: 400;
+  font-size: 28px;
+  color: #fff;
+}
+.card_sec3 {
+  border: 2px solid #ff4c00;
+  border-radius: 44px;
+  width: 492px;
+  height: 492px;
+  background: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+}
+.line_card_sec3 {
+  border: 10px solid #ff4c00;
+  border-radius: 39px;
+  width: 474px;
+  height: 474px;
+  background: var(--dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+}
+.info_card_sec3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Ховер эфекты */
+.card_sec3:hover{
+  background: #ff4c00;
+}
+.card_sec3:hover .line_card_sec3{
+  background: var(--dark-100);
+}
+
+
