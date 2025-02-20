@@ -363,7 +363,7 @@ h2 {
   font-size: 25px;
   text-transform: uppercase;
   text-align: center;
-  color: var(--contrast);
+  color: white;
 }
 /* Адаптивность второй секции под планшет*/
 @media (max-width: 1160px) {
@@ -378,22 +378,21 @@ h2 {
     font-size: 24px;
   }
 }
-/* Секчия 3 почему мы */
+/* Секция 3 почему мы */
 .priemysh_sec {
   padding-top: 50px;
 }
-/* Карточки */
+/* Сетка карточек */
 .cards_sec3 {
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-gap: 60px;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 60px;
 }
+/* Текст на картах */
 .priemysh_sec h2 {
   margin-bottom: 60px;
 }
 .priemysh_sec h4 {
-  color: var(--contrast);
   font-weight: 700;
   font-size: 32px;
   text-transform: uppercase;
@@ -403,12 +402,13 @@ gap: 60px;
   margin-bottom: 20px;
 }
 .priemysh_sec p {
-  color: var(--contrast);
   font-weight: 400;
   font-size: 28px;
   color: #fff;
 }
-.card_sec3 {
+/* Карточки */
+/* Карта 1----------------- */
+.card1_sec3 {
   border: 2px solid #ff4c00;
   border-radius: 44px;
   width: 492px;
@@ -418,9 +418,10 @@ gap: 60px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  
+  grid-row: 1/2;
+  grid-column: 1/2;
 }
-.line_card_sec3 {
+.line_card1_sec3 {
   border: 10px solid #ff4c00;
   border-radius: 39px;
   width: 474px;
@@ -432,17 +433,231 @@ gap: 60px;
   align-items: center;
   padding: 30px 20px;
 }
-.info_card_sec3{
+.info_card1_no {
+  display: none;
+}
+/* Эфект после нажатия */
+.card1_sec3.changed {
+  height: 1046px;
+  grid-row: 1/3;
+  grid-column: 1/2;
+  z-index: 2;
+}
+.card1_sec3.changed .line_card1_sec3 {
+  height: 1028px;
+  justify-content: start;
+}
+.card1_sec3.changed .info_card1_no {
+  display: block;
+}
+
+/* Карта 2---------------------- */
+.card2_sec3 {
+  border: 2px solid #ff4c00;
+  border-radius: 44px;
+  width: 492px;
+  height: 492px;
+  background: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+.line_card2_sec3 {
+  border: 10px solid #ff4c00;
+  border-radius: 39px;
+  width: 474px;
+  height: 474px;
+  background: var(--dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+}
+.info_card2_no {
+  display: none;
+}
+/* Эфект после нажатия */
+.card2_sec3.changed2 {
+  height: 1046px;
+  grid-row: 1/3;
+  grid-column: 2/3;
+  z-index: 2;
+}
+.card2_sec3.changed2 .line_card2_sec3 {
+  height: 1028px;
+  justify-content: start;
+}
+.card2_sec3.changed2 .info_card2_no {
+  display: block;
+}
+/* Карта 3---------------------- */
+.card3_sec3 {
+  border: 2px solid #ff4c00;
+  border-radius: 44px;
+  width: 492px;
+  height: 492px;
+  background: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+.line_card3_sec3 {
+  border: 10px solid #ff4c00;
+  border-radius: 39px;
+  width: 474px;
+  height: 474px;
+  background: var(--dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.info_card3_no {
+  display: none;
+}
+/* Эфект после нажатия */
+.card3_sec3.changed3 {
+  height: 1046px;
+  grid-row: 1/3;
+  grid-column: 1/2;
+  z-index: 2;
+}
+.card3_sec3.changed3 .line_card3_sec3 {
+  height: 1028px;
+  justify-content: end;
+}
+.card3_sec3.changed3 .info_card3_no {
+  display: block;
+}
+
+/* Карта 4---------------------- */
+.card4_sec3 {
+  border: 2px solid #ff4c00;
+  border-radius: 44px;
+  width: 492px;
+  height: 492px;
+  background: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.line_card4_sec3 {
+  border: 10px solid #ff4c00;
+  border-radius: 39px;
+  width: 474px;
+  height: 474px;
+  background: var(--dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+}
+.info_card4_no {
+  display: none;
+}
+/* Эфект после нажатия */
+.card4_sec3.changed4 {
+  height: 1046px;
+  grid-row: 1/3;
+  grid-column: 2/3;
+  z-index: 2;
+}
+.card4_sec3.changed4 .line_card4_sec3 {
+  height: 1028px;
+  justify-content: end;
+}
+.card4_sec3.changed4 .info_card4_no {
+  display: block;
+}
+
+/* Информация карт */
+.info_card_sec3 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 /* Ховер эфекты */
-.card_sec3:hover{
+.card1_sec3:hover {
   background: #ff4c00;
 }
-.card_sec3:hover .line_card_sec3{
+.card1_sec3:hover .line_card1_sec3 {
   background: var(--dark-100);
 }
-
-
+.card2_sec3:hover {
+  background: #ff4c00;
+}
+.card2_sec3:hover .line_card2_sec3 {
+  background: var(--dark-100);
+}
+.card3_sec3:hover {
+  background: #ff4c00;
+}
+.card3_sec3:hover .line_card3_sec3 {
+  background: var(--dark-100);
+}
+.card4_sec3:hover {
+  background: #ff4c00;
+}
+.card4_sec3:hover .line_card4_sec3 {
+  background: var(--dark-100);
+}
+/* Адаптация секции 3 под планшет */
+@media (max-width: 1160px) {
+  .cards_sec3 {
+    display: grid;
+    justify-items: center;
+    grid-template: repeat(4, 1fr) / 1fr;
+    gap: 60px;
+  }
+  /* Карта1 */
+  .card1_sec3 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .card1_sec3.changed {
+    grid-row: 1/3;
+    grid-column: 1/2;
+  }
+  /* Карта2 */
+  .card2_sec3 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .card2_sec3.changed2 {
+    grid-row: 1/3;
+    grid-column: 1/2;
+  }
+  /* Карта3 */
+  .card3_sec3 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .card3_sec3.changed3 {
+    grid-row: 3/5;
+    grid-column: 1/2;
+  }
+  /* Карта4 */
+  .card4_sec3 {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+  .card4_sec3.changed4 {
+    grid-row: 3/5;
+    grid-column: 1/2;
+  }
+  
+}
