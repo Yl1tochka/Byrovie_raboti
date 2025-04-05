@@ -3,23 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ГНБ
-    </title>
-    <link rel="stylesheet" href="./code/style.css" />
+    <title>ГНБ</title>
+    <link rel="stylesheet" href="./access/style.css" />
+    <script defer src="./access/code/script.js"></script>
   </head>
   <body>
-    <header>
+    <!-- Шапка -->
+     
+    <header id="shared-header">
       <div class="head container">
+        <!-- Логотип -->
         <a href="./index.html">
-          <div class="logo_top">Logo</div>
+          <div class="logo_top">Пере-бур</div>
         </a>
+        <!-- Навигация -->
         <nav>
           <ul>
             <li><a href="./index.html">Главная</a></li>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="./uslugi.html">Услуги</a></li>
+            <li><a href="./o_nas.html">О нас</a></li>
+            <li><a href="./otzivi.html">Отзывы</a></li>
+            <li><a href="./kontakti.html">Контакты</a></li>
             <li>
               <a href="+79872393821" id="phoneLink" class="don't_active"
                 >+7 (987) 239-38-21</a
@@ -36,6 +40,7 @@
       <!-- Секция 1 -->
       <section class="top_dis">
         <div class="top_grid">
+          <!-- текст главной секции -->
           <div class="top_glav_disp container">
             <h1>ГОРИЗОНТАЛЬНО-НАПРАВЛЕННОЕ БУРЕНИЕ</h1>
             <p class="top_glav_disp_p">
@@ -52,9 +57,10 @@
               <button class="btn_glav_disp">Заказать звонок</button>
             </form>
           </div>
+          <!-- Плитки дизайна и картинки -->
           <div class="top_perv_icons">
             <div class="top_img1">
-              <img src="./img/top_img1.png" alt="Процесс бурения" />
+              <img src="./access/img/top_img1.png" alt="Процесс бурения" />
             </div>
             <div class="top_rec1"></div>
             <div class="top_rec2"></div>
@@ -62,7 +68,7 @@
             <div class="top_rec4"></div>
             <div class="top_rec5"></div>
             <div class="top_img2">
-              <img src="./img/top_img2.png" alt="Процес аналитики бурения" />
+              <img src="./access/img/top_img2.png" alt="Процес аналитики бурения" />
             </div>
           </div>
         </div>
@@ -73,19 +79,19 @@
           <h2>Почему мы?</h2>
           <div class="cards_sec_poch">
             <div class="card_sec_poch">
-              <img src="./img/icon_sec2_1.png" alt="" />
+              <img src="./access/img/icon_sec2_1.png" alt="" />
               <p>Сервисная поддержка 12 месяцев</p>
             </div>
             <div class="card_sec_poch">
-              <img src="./img/icon_sec2_2.png" alt="" />
+              <img src="./access/img/icon_sec2_2.png" alt="" />
               <p>Бесплатный Выезд специалиста</p>
             </div>
             <div class="card_sec_poch">
-              <img src="./img/icon_sec2_3.png" alt="" />
+              <img src="./access/img/icon_sec2_3.png" alt="" />
               <p>Каждый 10 метр бурения бесплатно</p>
             </div>
             <div class="card_sec_poch">
-              <img src="./img/icon_sec2_4.png" alt="" />
+              <img src="./access/img/icon_sec2_4.png" alt="" />
               <p>Квалифициро- <br />ванные специалисты</p>
             </div>
           </div>
@@ -119,11 +125,19 @@
                 </svg>
                 <div class="info_card_sec3">
                   <h4>Любая сложность</h4>
-                <p class="info_card1_yes">Бурение скважин вне зависимости от грунта
-                 <span class="info_card1_no">Для ГНБ применяется специализированное оборудование, которое адаптировано для работы с различными типами грунтов. Современные буровые установки оснащены мощными двигателями и износостойкими буровыми головками, способными проходить даже самые твердые породы. Это позволяет выполнять работы быстро и эффективно, независимо от сложности грунта.</span>
-                </p>
+                  <p class="info_card1_yes">
+                    Бурение скважин вне зависимости от грунта
+                    <span class="info_card1_no"
+                      >Для ГНБ применяется специализированное оборудование,
+                      которое адаптировано для работы с различными типами
+                      грунтов. Современные буровые установки оснащены мощными
+                      двигателями и износостойкими буровыми головками,
+                      способными проходить даже самые твердые породы. Это
+                      позволяет выполнять работы быстро и эффективно, независимо
+                      от сложности грунта.</span
+                    >
+                  </p>
                 </div>
-                
               </div>
             </button>
             <!-- ----------------------- -->
@@ -153,12 +167,20 @@
                 </svg>
                 <div class="info_card_sec3">
                   <h4>Скорость работы</h4>
-                <p>
-                  ГНБ-бурение помогает неплохо сэкономить сроки выполнения работ 
-                  <span class="info_card2_no">Традиционные методы прокладки коммуникаций требуют рытья траншей, что занимает много времени и ресурсов. ГНБ позволяет избежать этого, так как бурение происходит под землей без нарушения поверхности. Это особенно важно в городских условиях, где рытье траншей может привести к перекрытию дорог, остановке движения и другим неудобствам.</span>
-                </p>
+                  <p>
+                    ГНБ-бурение помогает неплохо сэкономить сроки выполнения
+                    работ
+                    <span class="info_card2_no"
+                      >Традиционные методы прокладки коммуникаций требуют рытья
+                      траншей, что занимает много времени и ресурсов. ГНБ
+                      позволяет избежать этого, так как бурение происходит под
+                      землей без нарушения поверхности. Это особенно важно в
+                      городских условиях, где рытье траншей может привести к
+                      перекрытию дорог, остановке движения и другим
+                      неудобствам.</span
+                    >
+                  </p>
                 </div>
-                
               </div>
             </button>
             <!-- ------------------------ -->
@@ -178,11 +200,17 @@
                 </svg>
                 <div class="info_card_sec3">
                   <h4>Приемлемые цены</h4>
-                <p>Цена не самая низкая, но более чем адекватная
-                  <span class="info_card3_no">Горизонтально направленное бурение (ГНБ) — это технология, которая занимает "золотую середину" на рынке подземных работ. Ее стоимость выше, чем у традиционных методов (например, открытого рытья траншей), но ниже, чем у некоторых других современных технологий.</span>
-                </p>
+                  <p>
+                    Цена не самая низкая, но более чем адекватная
+                    <span class="info_card3_no"
+                      >Горизонтально направленное бурение (ГНБ) — это
+                      технология, которая занимает "золотую середину" на рынке
+                      подземных работ. Ее стоимость выше, чем у традиционных
+                      методов (например, открытого рытья траншей), но ниже, чем
+                      у некоторых других современных технологий.</span
+                    >
+                  </p>
                 </div>
-                
               </div>
             </button>
             <!-- ------------------------- -->
@@ -202,8 +230,15 @@
                 </svg>
                 <div class="info_card_sec3">
                   <h4>деликатность</h4>
-                  <p>Минимальное воздействие на окружающую среду
-                    <span class="info_card4_no">Поскольку ГНБ требует меньше тяжелой техники и транспорта (по сравнению с традиционными методами), объем выбросов вредных веществ в атмосферу значительно снижается. Это особенно важно в городских условиях, где качество воздуха является критическим фактором.</span>
+                  <p>
+                    Минимальное воздействие на окружающую среду
+                    <span class="info_card4_no"
+                      >Поскольку ГНБ требует меньше тяжелой техники и транспорта
+                      (по сравнению с традиционными методами), объем выбросов
+                      вредных веществ в атмосферу значительно снижается. Это
+                      особенно важно в городских условиях, где качество воздуха
+                      является критическим фактором.</span
+                    >
                   </p>
                 </div>
               </div>
@@ -212,13 +247,81 @@
         </div>
       </section>
       <!-- Секция 4 -->
+      <section class="price">
+        <div class="container">
+          <h2>Прайс-лист</h2>
+          <div class="price_sec4">
+            <div class="table_bord">
+              <div class="stroke_tabel">
+                <div>Диаметр трубопровода, мм</div>
+                <div>
+                  Стоимость прокладки полиэтиленовой трубы, за 1 погонный метр
+                </div>
+                <div>
+                  Стоимость прокладки стальной трубы, за 1 погонный метр
+                </div>
+              </div>
+              <div class="stroke_tabel">
+                <div>50</div>
+                <div>1 500 - 2 000</div>
+                <div>1 500 - 2 000</div>
+              </div>
+              <div class="stroke_tabel">
+                <div>100</div>
+                <div>2 000 - 3 000</div>
+                <div>2 000 - 3 000</div>
+              </div>
+              <div class="stroke_tabel">
+                <div>200</div>
+                <div>3 000 - 4 500</div>
+                <div>3 500 - 5 000</div>
+              </div>
+              <div class="stroke_tabel">
+                <div>300</div>
+                <div>4 500 - 7 000</div>
+                <div>6 000 - 9 000</div>
+              </div>
+              <div class="stroke_tabel">
+                <div>400</div>
+                <div>6 000 - 8 500</div>
+                <div>8 000 - 10 000</div>
+              </div>
+              <div class="stroke_tabel">
+                <div>500</div>
+                <div>8 500 - 11 000</div>
+                <div>10 000 - 15 000</div>
+              </div>
+              <div class="stroke_tabel">
+                <div>600</div>
+                <div>10 000 - 12 000</div>
+                <div>13 000 - 17 000</div>
+              </div>
+              <div class="stroke_tabel stoke_last">
+                <div>700</div>
+                <div>15 000 - 17 000</div>
+                <div>17 000 - 21 000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="container">
+        <div class="foot">
+          <a href="./index.html">
+            <div class="logo_top">Logo</div>
+          </a>
+          <div>© 2025 «ГБН» Все права защищены</div>
+        </div>
+      </div>
+    </footer>
 
     <!--  -->
     <!--  -->
     <!--  -->
     <!--  -->
-   
+
     <button id="scrollToTopBtn" title="Наверх">
       <svg
         width="99"
@@ -238,7 +341,6 @@
         <path d="M24 59L50 33L76 59" stroke="#FF4C00" stroke-width="3" />
       </svg>
     </button>
-
-    <script src="./code/script.js"></script>
+    
   </body>
 </html>
