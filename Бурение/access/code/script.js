@@ -199,3 +199,24 @@ document.addEventListener('DOMContentLoaded', function() {
   // Инициализация при загрузке (на случай, если страница уже прокручена)
   handleScroll();
 });
+
+// Добавляем слайдер
+$(document).ready(function () {
+  var $slider = $(".slider").slick({
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+  });
+
+  // Назначаем обработчики для ваших кнопок
+  $(".strengle:first-child button").click(function () {
+    $slider.slick("slickPrev");
+  });
+
+  $(".strengle:last-child button").click(function () {
+    $slider.slick("slickNext");
+  });
+});

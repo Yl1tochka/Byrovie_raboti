@@ -1063,7 +1063,7 @@ h2 {
   position: absolute;
   top: 120px;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 /* Карточка с контактами */
 .kontakti {
@@ -1084,5 +1084,88 @@ h2 {
   position: absolute;
   top: 430px;
   left: 36%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
+
+/* Страница с отзывами */
+
+/* Слайдер */
+.slider {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.slick-slide {
+  padding: 0 113px;
+}
+.slick-prev:before, 
+.slick-next:before {
+  color: #FF4C00; /* Цвет стрелок */
+}
+
+
+
+
+
+
+/* карта с отзывом */
+.card_otziv {
+  margin: 0 60px;
+  border: 1px solid #ff4c00;
+  border-radius: 35px;
+  max-width: 1081px;
+  height: 609px;
+  box-shadow: 0 0 48px -5px var(--dark);
+  background: var(--dark);
+  padding: 36px 50px 38px 65px;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 35px;
+}
+
+/* левая честь отзыва */
+.card_left_part {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+/* картинка */
+.img_on_otziv{
+  width: 306px;
+  height: 263px;
+}
+/* Стрелочки */
+.strengles {
+  display: flex;
+  gap: 27px;
+}
+.strengle img,
+button {
+  border-radius: 50px;
+  background: #000;
+}
+/* Правая частть отзыва */
+.card_right_part {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* Звезды */
+.stars {
+  display: flex;
+  gap: 4px;
+}
+/* Клиент */
+.FIO_client {
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #fff;
+}
+/* Сам отзыв */
+.otziv_clienta_txt {
+  font-weight: 400;
+  font-size: 28px;
+  color: #fff;
+}
+
