@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 :root {
   --primary: #ff4d00;
   --primary-dark: #c53b00;
@@ -129,6 +129,7 @@ nav a:active {
 }
 /* Адаптивность навигации  пот планшет*/
 @media (max-width: 1160px) {
+  
   .container {
     max-width: 704px;
   }
@@ -140,6 +141,9 @@ nav a:active {
   }
   nav a {
     font-size: 12px;
+  }
+  .active{
+    font-size: 14px;
   }
   nav a:hover {
     font-size: 12px;
@@ -154,6 +158,53 @@ nav a:active {
     max-width: 768px;
   }
 }
+
+/* Адаптив под телефон */
+@media (max-width: 320px) {
+  header {
+    padding: 5px 0 0 0;
+    margin-bottom: 10px;
+  }
+  .head {
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .container {
+    max-width: 300px;
+    padding: 0 10px;
+  }
+  .logo_top {
+    width: 60px;
+    height: 22px;
+    font-size: 8px;
+    padding: 4px 5px 5px 4px;
+  }
+  nav ul{
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 5px;
+  }
+  nav a {
+    height: 10px;
+    font-size: 5px;
+  }
+  .active{
+    font-size: 6px;
+  }
+  nav a:hover {
+    font-size: 5px;
+  }
+  nav a:active {
+    font-size: 5px;
+  }
+  .message {
+    font-size: 5px;
+  }
+  .line_header {
+    max-width: 300px;
+  }
+}
+
 
 /* -------------------------------- */
 /* -------------------------------- */
