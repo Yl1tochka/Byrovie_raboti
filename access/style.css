@@ -931,6 +931,9 @@ h2 {
   left: 36%;
   transform: translate(-50%, -50%);
 }
+.footer_map{
+  border-top: none;
+}
 
 /* Страница с отзывами */
 

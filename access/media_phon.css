@@ -371,7 +371,7 @@
   }
   .grid_uslug_center3 {
     border: 3px solid #ff4c00;
-    border-radius: 87px 16px 16px 16px;
+    border-radius: 16px 87px 16px 16px;
     width: 300px;
     height: 174px;
     font-size: 14px;
@@ -545,7 +545,7 @@
     height: 100%;
   }
   .bottom_map {
-    max-height: 800px;
+    max-height: 680px;
   }
   /* Оформление для Заголовка */
   .map_site h2 {
