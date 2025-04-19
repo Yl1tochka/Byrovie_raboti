@@ -144,6 +144,9 @@
   .stroke_tabel > div {
     width: 175px;
   }
+  .stoke_last {
+    border-bottom: none;
+  }
 }
 /* адаптация подвала */
 @media (max-width: 1160px) {
