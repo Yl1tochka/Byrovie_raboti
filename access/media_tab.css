@@ -1,6 +1,5 @@
 /* Адаптивность навигации  пот планшет*/
 @media (max-width: 1160px) {
-  
   .container {
     max-width: 704px;
   }
@@ -13,7 +12,7 @@
   nav a {
     font-size: 12px;
   }
-  .active{
+  .active {
     font-size: 14px;
   }
   nav a:hover {
@@ -126,7 +125,7 @@
   }
 }
 /* адаптация 4 секции */
-@media (max-width: 1160px ) {
+@media (max-width: 1160px) {
   .price {
     margin-top: 25px;
   }
@@ -161,10 +160,16 @@
 /* фон для услуг */
 @media (max-width: 1600px) {
   .nashi_uslugi_top_decor_left {
-    transform: translateX(-100%);
+    transition: opacity 3s ease;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
   }
   .nashi_uslugi_top_decor_right {
-    transform: translateX(100%);
+    transition: opacity 3s ease;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
   }
   .nashi_uslugi_top_decor_df {
     justify-content: center;

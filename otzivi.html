@@ -10,11 +10,10 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <link rel="stylesheet" href="./access/media_tab.css">
-    <link rel="stylesheet" href="./access/media_phon.css">
-    
     <script defer src="./access/code/script.js"></script>
     <link rel="stylesheet" href="./access/style.css" />
+    <link rel="stylesheet" href="./access/media_tab.css" />
+    <link rel="stylesheet" href="./access/media_phon.css" />
   </head>
   <body>
     <!-- Шапка -->
@@ -58,7 +57,7 @@
               </div>
               <div class="strengles">
                 <div class="strengle">
-                  <button>
+                  <button id="curs">
                     <img
                       src="./access/img/strengle1.png"
                       alt="стрелочка на лево"
@@ -66,7 +65,7 @@
                   </button>
                 </div>
                 <div class="strengle">
-                  <button>
+                  <button id="curs">
                     <img
                       src="./access/img/strengle2.png"
                       alt="стрелочка на право"
@@ -161,11 +160,11 @@
           <div class="card_otziv">
             <div class="card_left_part">
               <div class="img_on_otziv">
-                <img src="./access/img/otziv2.png"width = "" alt="img_otzova" />
+                <img src="./access/img/otziv2.png" width="" alt="img_otzova" />
               </div>
               <div class="strengles">
                 <div class="strengle">
-                  <button>
+                  <button id="curs">
                     <img
                       src="./access/img/strengle1.png"
                       alt="стрелочка на лево"
@@ -173,7 +172,7 @@
                   </button>
                 </div>
                 <div class="strengle">
-                  <button>
+                  <button id="curs">
                     <img
                       src="./access/img/strengle2.png"
                       alt="стрелочка на право"
@@ -263,7 +262,7 @@
                 Работали ювелирно: пробурили 28 метров всего за день, не задели
                 ни один куст, не оставили грязи. Особенно порадовало, что сразу
                 сделали тестовую прокладку пустотелой гильзы - показали, как
-                будет проходить трасса. 
+                будет проходить трасса.
               </div>
             </div>
           </div>
@@ -274,7 +273,7 @@
               </div>
               <div class="strengles">
                 <div class="strengle">
-                  <button>
+                  <button id="curs">
                     <img
                       src="./access/img/strengle1.png"
                       alt="стрелочка на лево"
@@ -282,7 +281,7 @@
                   </button>
                 </div>
                 <div class="strengle">
-                  <button>
+                  <button id="curs">
                     <img
                       src="./access/img/strengle2.png"
                       alt="стрелочка на право"
@@ -372,11 +371,23 @@
                 профессионально! Привезли компактную установку, работали без
                 шума и вибрации. Менеджер ежечасно присылал фотоотчёт, а после
                 завершения даже подмели песок, который случайно просыпали.
-                
               </div>
             </div>
           </div>
         </section>
+        <!-- Стрелки для телефона -->
+        <div class="strengles_t">
+          <div class="strengle">
+            <button id="curs">
+              <img src="./access/img/strengle1.png" alt="стрелочка на лево" />
+            </button>
+          </div>
+          <div class="strengle">
+            <button id="curs">
+              <img src="./access/img/strengle2.png" alt="стрелочка на право" />
+            </button>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -415,37 +426,43 @@
         <path d="M24 59L50 33L76 59" stroke="#FF4C00" stroke-width="3" />
       </svg>
     </button>
-    <script>
-      $(document).ready(function () {
-        var $slider = $(".slider").slick({
-          dots: false,
-          arrows: false,
-          infinite: true,
-          speed: 300,
-          slidesToShow: 1,
-          adaptiveHeight: true,
-          
-        });
-
-
-        $(".strengle:first-child button").click(function () {
-          $slider.slick("slickPrev");
-        });
-
-        $(".strengle:last-child button").click(function () {
-          $slider.slick("slickNext");
-        });
-      });
-    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script>
+      $(document).ready(function () {
+        $(".slider").slick({
+          dots: false,
+          arrows: false,
+          speed: 300,
+          slidesToShow: 1,
+          adaptiveHeight: true,
+          waitForAnimate: false,
+          swipe: true,
+          fade: false,
+          infinite: true,
+          slidesToScroll: 1,
+          swipeToSlide: true,
+          edgeFriction: 0.2,
+        });
+
+        $(".strengle:first-child button").click(function () {
+          $(".slider").slick("slickPrev");
+        });
+
+        $(".strengle:last-child button").click(function () {
+          $(".slider").slick("slickNext");
+        });
+      });
+    </script>
+
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-    
   </body>
 </html>

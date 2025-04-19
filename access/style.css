@@ -1,4 +1,4 @@
- @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 :root {
   --primary: #ff4d00;
   --primary-dark: #c53b00;
@@ -34,9 +34,10 @@ body {
   bottom: 20px;
   right: 10%;
   z-index: 1000;
-  border: none; 
+  border: none;
   cursor: pointer;
   background: none;
+  
 }
 
 #scrollToTopBtn:hover {
@@ -127,10 +128,6 @@ nav a:active {
   margin: auto;
   background: var(--contrast);
 }
-
-
-
-
 
 /* -------------------------------- */
 /* -------------------------------- */
@@ -283,8 +280,6 @@ input[type="number"]::-webkit-outer-spin-button {
   grid-row: 5/9;
   grid-column: 7/10;
 }
-
-
 
 /* Конец главной секции */
 
@@ -630,8 +625,6 @@ footer {
   max-width: 1160px;
 }
 
-
-
 /* Страница "О нас" */
 
 /* О нас  */
@@ -721,18 +714,21 @@ h2 {
   justify-content: space-between;
   gap: 30px;
 }
+/* Плиточки с лева */
 .nashi_uslugi_top_decor_left {
   display: grid;
   grid-template: repeat(5, 1fr) / repeat(2, 1fr);
   row-gap: 56px;
   column-gap: 30px;
 }
+/* Плиточки справа */
 .nashi_uslugi_top_decor_right {
   display: grid;
   grid-template: repeat(5, 1fr) / repeat(2, 1fr);
   row-gap: 56px;
   column-gap: 30px;
 }
+/* номера плиток по краям */
 .grid_uslug_left1 {
   border: 6px solid #ff4c00;
   border-radius: 14px 50px;
@@ -789,6 +785,7 @@ h2 {
   grid-row: 4/6;
   grid-column: 2/3;
 }
+/* приточки в середине */
 .nashi_uslugi_top_decor_center {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(3, 1fr);
@@ -799,6 +796,7 @@ h2 {
   text-align: center;
   color: #fff;
 }
+/* выравнивани плиток в центре */
 .grid_uslug_center1 {
   border: 6px solid #ff4c00;
   border-radius: 33px 33px 174px 33px;
@@ -867,7 +865,6 @@ h2 {
   justify-content: center;
   background-image: url(./img/card_u4.png);
 }
-
 
 /* Страница "Контакты" */
 
@@ -945,15 +942,10 @@ h2 {
 .slick-slide {
   padding: 0 113px;
 }
-.slick-prev:before, 
+.slick-prev:before,
 .slick-next:before {
-  color: #FF4C00; /* Цвет стрелок */
+  color: #ff4c00; /* Цвет стрелок */
 }
-
-
-
-
-
 
 /* карта с отзывом */
 .card_otziv {
@@ -977,7 +969,7 @@ h2 {
   flex-direction: column;
 }
 /* картинка */
-.img_on_otziv{
+.img_on_otziv {
   width: 306px;
   height: 263px;
 }
@@ -986,11 +978,16 @@ h2 {
   display: flex;
   gap: 27px;
 }
+.strengles_t {
+  display: none;
+}
 .strengle img,
 button {
   border-radius: 50px;
   background: #000;
+  cursor: pointer;
 }
+
 /* Правая частть отзыва */
 .card_right_part {
   display: flex;
@@ -1016,4 +1013,3 @@ button {
   font-size: 28px;
   color: #fff;
 }
-

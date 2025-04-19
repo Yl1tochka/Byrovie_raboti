@@ -1,3 +1,4 @@
+/* Главная страница */
 /* Адаптив шапки под телефон */
 @media (max-width: 680px) {
   header {
@@ -38,6 +39,7 @@
   }
   .message {
     font-size: 7px;
+    top: 7px;
   }
   .line_header {
     height: 1px;
@@ -280,10 +282,9 @@
   .card4_sec3.changed4 .line_card4_sec3 {
     height: 514px;
   }
-
 }
 /* адаптация 4 секции */
-@media (max-width: 680px ) {
+@media (max-width: 680px) {
   .price {
     margin-top: 25px;
   }
@@ -315,9 +316,9 @@
     font-size: 8px;
   }
 }
-/* Адаптив кнопки слайдер */ 
-@media (max-width: 680px){
-  #scrollToTopBtn svg{
+/* Адаптив кнопки слайдер */
+@media (max-width: 680px) {
+  #scrollToTopBtn svg {
     width: 50px;
     height: 50px;
   }
@@ -328,8 +329,237 @@
     bottom: 20px;
     right: 10%;
     z-index: 1000;
-    border: none; 
+    border: none;
     cursor: pointer;
     background: none;
+  }
+}
+/* ------------------------------------------------------- */
+/* Страница услуг */
+/* ----------------------------------------------------- */
+/* Адаптив для плиток в верху */
+@media (max-width: 680px) {
+  /* приточки в середине */
+  .nashi_uslugi_top_decor_center {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+  }
+  /* выравнивани плиток в центре */
+  .grid_uslug_center1 {
+    background-position: center;
+    border: 3px solid #ff4c00;
+    padding: 5px;
+    border-radius: 16px 16px 87px 16px;
+    width: 300px;
+    height: 174px;
+    font-size: 14px;
+  }
+  .grid_uslug_center2 {
+    border: 3px solid #ff4c00;
+    border-radius: 16px 16px 16px 87px;
+    width: 300px;
+    height: 174px;
+    font-size: 14px;
+    padding: 5px;
+    background-position: center;
+  }
+  .grid_uslug_center3 {
+    border: 3px solid #ff4c00;
+    border-radius: 87px 16px 16px 16px;
+    width: 300px;
+    height: 174px;
+    font-size: 14px;
+    padding: 5px;
+    background-position: center;
+  }
+  .grid_uslug_center4 {
+    border: 3px solid #ff4c00;
+    border-radius: 16px 16px 16px 87px;
+    width: 300px;
+    height: 174px;
+    font-size: 14px;
+    padding: 5px;
+    background-position-x: right;
+    background-position-y: bottom;
+  }
+}
+/* ------------------------------------------------------- */
+/* Страница о нас */
+/* ----------------------------------------------------- */
+/* Адаптив для плиток в верху */
+@media (max-width: 680px) {
+  .o_nas_info0 {
+    padding: 20px 10px;
+  }
+  /* Секция 1 */
+  .sec_o_nas1 {
+    background: linear-gradient(270deg, rgba(38, 38, 38, 0) 0%, #262626 82.05%),
+      linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #262626 100%),
+      url(./img/o_nas_bg1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .o_nas_info1 {
+    max-width: 300px;
+    height: 450px;
+  }
+  .o_nas_div1 h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .o_nas_div1 p {
+    font-size: 14px;
+  }
+  .o_nas_decor img {
+    margin-top: 20px;
+    width: 50px;
+  }
+  .o_nas_decor2 img {
+    width: 50px;
+  }
+  /* Секция 2 */
+
+  .sec_o_nas2 {
+    background: linear-gradient(90deg, rgba(38, 38, 38, 0) 0%, #262626 85.05%),
+      linear-gradient(0deg, rgba(38, 38, 38, 0) 0%, #262626 100%),
+      linear-gradient(27deg, rgba(38, 38, 38, 0) 0%, #262626 78.85%),
+      url("./img/o_nas_bg2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .o_nas_div2 {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .o_nas_div2 h3 {
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 55px;
+  }
+  .o_nas_div2 p {
+    font-size: 14px;
+  }
+}
+
+/* ------------------------------------------------------- */
+/* Страница отзывы */
+/* ----------------------------------------------------- */
+/* Адаптив первой секции */
+@media (max-width: 680px) {
+  /* Слайдер */
+  .slider {
+    max-width: 390px;
+    margin-bottom: 70px;
+  }
+  .slick-slide {
+    padding: 0 20px;
+  }
+  /* карта с отзывом */
+  .card_otziv {
+    margin: 0 30px;
+    border-radius: 17px;
+    max-width: 355px;
+    max-height: 470px;
+    padding: 20px;
+    gap: 17px;
+    flex-direction: column !important;
+    box-shadow: 0 0 12px -3px var(--dark);
+  }
+
+  /* левая честь отзыва */
+  /* картинка */
+  .img_on_otziv {
+    width: 130px;
+    height: 110px;
+  }
+
+  .img_on_otziv img {
+    width: 130px;
+    height: 110px;
+  }
+
+  /* Правая часть отзыва */
+  .card_right_part {
+    gap: 5px;
+  }
+  /* Звезды */
+  .stars {
+    display: flex;
+    gap: 4px;
+  }
+  .star svg {
+    width: 15px;
+  }
+  /* Клиент */
+  .FIO_client {
+    font-size: 16px;
+  }
+  /* Сам отзыв */
+  .otziv_clienta_txt {
+    font-size: 14px;
+    color: #fff;
+  }
+  /* Стрелочки */
+  .strengles {
+    display: none;
+  }
+  .strengles_t {
+    display: block;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 0;
+    position: absolute;
+    top: 577px;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+  .strengles_t,
+  button {
+    width: 48px;
+    height: 51px;
+  }
+}
+
+/* ----------------------------------------------------- */
+/* Страница "Контакты" */
+/* --------------------------------------------------------- */
+/* Секция 1 */
+/* Карта на фоне */
+@media (max-width: 680px) {
+  .map {
+    width: 100%;
+    height: 100%;
+  }
+  .bottom_map {
+    max-height: 800px;
+  }
+  /* Оформление для Заголовка */
+  .map_site h2 {
+    top: 70px;
+  }
+  /* Карточка с контактами */
+  .kontakti {
+    border-radius: 17px;
+    width: 250px;
+    height: 145px;
+    font-size: 14px;
+    gap: 25px;
+    padding: 20px 0 0 25px;
+    top: 220px;
+    left: 40%;
   }
 }
