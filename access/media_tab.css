@@ -58,13 +58,12 @@
 /* Адаптивность второй секции под планшет*/
 @media (max-width: 1160px) {
   .pochemy_mi {
-    height: 600px;
+    height: 620px;
     margin-top: 25px;
-    padding-top: px;
   }
   .pochemy_mi p {
     font-size: 20px;
-    max-width: 75px;
+    max-width: 160px;
   }
   h2 {
     font-size: 24px;
@@ -127,7 +126,7 @@
   }
 }
 /* адаптация 4 секции */
-@media (max-width: 1160px) {
+@media (max-width: 1160px ) {
   .price {
     margin-top: 25px;
   }

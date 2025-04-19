@@ -287,6 +287,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 
 /* Конец главной секции */
+
 /* Начало второй сукции */
 .pochemy_mi {
   margin-top: 50px;
@@ -325,7 +326,7 @@ h2 {
   background: #262626;
 }
 .card_sec_poch > p {
-  min-width: 210px;
+  width: 210px;
   font-weight: 400;
   font-size: 25px;
   text-transform: uppercase;

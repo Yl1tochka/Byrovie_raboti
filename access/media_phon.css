@@ -1,4 +1,4 @@
-/* Адаптив под телефон */
+/* Адаптив шапки под телефон */
 @media (max-width: 680px) {
   header {
     padding: 5px 0 0 0;
@@ -9,46 +9,47 @@
     margin-bottom: 5px;
   }
   .container {
-    max-width: 300px;
+    max-width: 355px;
     padding: 0 10px;
   }
   .logo_top {
-    width: 60px;
-    height: 22px;
-    font-size: 8px;
-    padding: 4px 5px 5px 4px;
+    width: 70px;
+    height: 27px;
+    font-size: 11px;
+    padding: 5px 5px 5px 4px;
   }
   nav ul{
     align-items: center;
-    gap: 7px;
+    gap: 8px;
     margin-bottom: 5px;
   }
   nav a {
     height: 10px;
-    font-size: 5px;
+    font-size: 7px;
   }
   .active{
-    font-size: 6px;
+    font-size: 8px;
   }
   nav a:hover {
-    font-size: 5px;
+    font-size: 7px;
   }
   nav a:active {
-    font-size: 5px;
+    font-size: 7px;
   }
   .message {
-    font-size: 5px;
+    font-size: 7px;
   }
   .line_header {
-    max-width: 300px;
+    height: 1px;
+    max-width: 355px;
   }
 }
 /* Адаптивность главной секции под телефон*/
 @media (max-width: 680px) {
   .top_grid {
-    max-width: 320px;
+    max-width: 355px;
     gap: 15px;
-    height: 300px;
+    height: 370px;
   }
   .top_glav_disp{
     justify-content: flex-start;
@@ -61,23 +62,21 @@
     margin: auto;
     padding: 0;
   }
-  .top_glav_disp_p {
-    font-size: 7px;
-  }
+
   .top_glav_disp h1 {
-    font-size: 12px;
+    font-size: 20px;
   }
   /* Иконки на главном экране */
 .top_perv_icons {
   display: grid;
   grid-template:
-    29px 32px 18px 20px 19px 11px 25px 17px /
-    64px 25px 9px 17px 5px 12px 18px 30px 23px 8px 49px;
+    29px 32px 18px 20px 19px 22px 25px 17px /
+    64px 25px 9px 17px 5px 24px 18px 30px 23px 18px 49px;
   grid-row: 1/2;
   grid-column: 1/2;
 }
 .top_img1 img{
-  width: 110px;
+  width: 130px;
 }
 .top_rec1 {
   border-radius: 3px;
@@ -105,7 +104,7 @@
   height: 17px;
 }
 .top_img2 img{
-  width: 50px;
+  width: 80px;
 }
 
 
@@ -119,7 +118,7 @@ h1 {
   max-width: 300px;
 }
 .top_glav_disp_p {
-  font-size: 12px;
+  font-size: 16px;
   max-width: 300px;
 }
 /* ---------------------- */
@@ -142,7 +141,36 @@ h1 {
   border-radius: 0 25px 25px 0;
   width: 131px;
   height: 40px;
-  font-size: 9px;
+  font-size: 10px;
 
 }
 }
+/* Адаптивность второй секции под телефон*/
+@media (max-width: 680px) {
+  .pochemy_mi {
+    height: 310px;
+    margin-top: 25px;
+    padding:10px 0;
+  }
+  .pochemy_mi p {
+    font-size: 12px;
+    max-width: 90px;
+  }
+  h2 {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  .cards_sec_poch {
+    margin-top: 20px;
+  }
+  .card_sec_poch {
+    padding: 10px 0;
+    border-radius: 17px;
+    width: 120px;
+    height: 110px;
+  }
+  .card_sec_poch img{
+    width: 45px;
+  }
+}
+  
