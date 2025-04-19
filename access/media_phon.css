@@ -1,0 +1,148 @@
+/* Адаптив под телефон */
+@media (max-width: 680px) {
+  header {
+    padding: 5px 0 0 0;
+    margin-bottom: 10px;
+  }
+  .head {
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .container {
+    max-width: 300px;
+    padding: 0 10px;
+  }
+  .logo_top {
+    width: 60px;
+    height: 22px;
+    font-size: 8px;
+    padding: 4px 5px 5px 4px;
+  }
+  nav ul{
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 5px;
+  }
+  nav a {
+    height: 10px;
+    font-size: 5px;
+  }
+  .active{
+    font-size: 6px;
+  }
+  nav a:hover {
+    font-size: 5px;
+  }
+  nav a:active {
+    font-size: 5px;
+  }
+  .message {
+    font-size: 5px;
+  }
+  .line_header {
+    max-width: 300px;
+  }
+}
+/* Адаптивность главной секции под телефон*/
+@media (max-width: 680px) {
+  .top_grid {
+    max-width: 320px;
+    gap: 15px;
+    height: 300px;
+  }
+  .top_glav_disp{
+    justify-content: flex-start;
+    height: 201px;
+  }
+  .top_perv_icons {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    max-width: 768px;
+    margin: auto;
+    padding: 0;
+  }
+  .top_glav_disp_p {
+    font-size: 7px;
+  }
+  .top_glav_disp h1 {
+    font-size: 12px;
+  }
+  /* Иконки на главном экране */
+.top_perv_icons {
+  display: grid;
+  grid-template:
+    29px 32px 18px 20px 19px 11px 25px 17px /
+    64px 25px 9px 17px 5px 12px 18px 30px 23px 8px 49px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+.top_img1 img{
+  width: 110px;
+}
+.top_rec1 {
+  border-radius: 3px;
+  width: 18px;
+  height: 18px;
+}
+.top_rec2 {
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+}
+.top_rec3 {
+  border-radius: 6px;
+  width: 49px;
+  height: 49px;
+}
+.top_rec4 {
+  border-radius: 6px;
+  width: 25px;
+  height: 25px;
+}
+.top_rec5 {
+  border-radius: 6px;
+  width: 17px;
+  height: 17px;
+}
+.top_img2 img{
+  width: 50px;
+}
+
+
+/* Текст */
+.top_glav_disp {
+  height: 200px;
+}
+h1 {
+  font-size: 22px;
+  margin-bottom: 11px;
+  max-width: 300px;
+}
+.top_glav_disp_p {
+  font-size: 12px;
+  max-width: 300px;
+}
+/* ---------------------- */
+/* Форма */
+.form1 {
+  margin-top: 18px;
+}
+.form1 > input {
+  border-radius: 25px 0 0 25px;
+  padding: 0px 0px 0px 21px;
+  width: 180px;
+  height: 40px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.47);
+  font-size: 12px;
+}
+.form1 input::placeholder {
+  font-size: 12px;
+}
+.form1 > button {
+  border-radius: 0 25px 25px 0;
+  width: 131px;
+  height: 40px;
+  font-size: 9px;
+
+}
+}

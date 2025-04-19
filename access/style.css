@@ -29,22 +29,22 @@ body {
 /* Кнопка слайдер */
 #scrollToTopBtn {
   border-radius: 100%;
-  display: none; /* Скрываем кнопку по умолчанию */
-  position: fixed; /* Фиксированное позиционирование */
-  bottom: 20px; /* Отступ снизу */
-  right: 10%; /* Отступ справа */
-  z-index: 1000; /* Высокий z-index, чтобы кнопка была поверх других элементов */
-  border: none; /* Убираем рамку */
-  cursor: pointer; /* Курсор в виде указателя */
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 10%;
+  z-index: 1000;
+  border: none; 
+  cursor: pointer;
   background: none;
 }
 
 #scrollToTopBtn:hover {
   background-color: var(--primary);
-  border: 1px solid var(--primary); /* Цвет фона при наведении */
+  border: 1px solid var(--primary);
 }
 
-/* Шапка сайта */
+
 header {
   padding: 20px 0 0 0;
   margin-bottom: 20px;
@@ -127,83 +127,9 @@ nav a:active {
   margin: auto;
   background: var(--contrast);
 }
-/* Адаптивность навигации  пот планшет*/
-@media (max-width: 1160px) {
-  
-  .container {
-    max-width: 704px;
-  }
-  .logo_top {
-    width: 120px;
-    height: 45px;
-    font-size: 19px;
-    padding: 8px 10px 10px 8px;
-  }
-  nav a {
-    font-size: 12px;
-  }
-  .active{
-    font-size: 14px;
-  }
-  nav a:hover {
-    font-size: 12px;
-  }
-  nav a:active {
-    font-size: 12px;
-  }
-  .message {
-    font-size: 11px;
-  }
-  .line_header {
-    max-width: 768px;
-  }
-}
 
-/* Адаптив под телефон */
-@media (max-width: 320px) {
-  header {
-    padding: 5px 0 0 0;
-    margin-bottom: 10px;
-  }
-  .head {
-    align-items: center;
-    margin-bottom: 5px;
-  }
-  .container {
-    max-width: 300px;
-    padding: 0 10px;
-  }
-  .logo_top {
-    width: 60px;
-    height: 22px;
-    font-size: 8px;
-    padding: 4px 5px 5px 4px;
-  }
-  nav ul{
-    align-items: center;
-    gap: 7px;
-    margin-bottom: 5px;
-  }
-  nav a {
-    height: 10px;
-    font-size: 5px;
-  }
-  .active{
-    font-size: 6px;
-  }
-  nav a:hover {
-    font-size: 5px;
-  }
-  nav a:active {
-    font-size: 5px;
-  }
-  .message {
-    font-size: 5px;
-  }
-  .line_header {
-    max-width: 300px;
-  }
-}
+
+
 
 
 /* -------------------------------- */
@@ -357,136 +283,7 @@ input[type="number"]::-webkit-outer-spin-button {
   grid-row: 5/9;
   grid-column: 7/10;
 }
-/* Адаптивность главной секции под планшет*/
-@media (max-width: 1160px) {
-  .top_grid {
-    max-width: 768px;
-    margin: auto;
-    grid-template: 2/1;
-    gap: 0px;
-  }
-  .top_glav_disp {
-    margin-top: 0px;
-    grid-row: 2/3;
-    height: 270px;
-  }
-  .top_perv_icons {
-    grid-column: 1/2;
-    max-width: 768px;
-    margin: auto;
-    padding: 0;
-  }
-  .top_glav_disp_p {
-    font-size: 18px;
-  }
-  .top_glav_disp h1 {
-    font-size: 26px;
-  }
-}
 
-/* Адаптивность главной секции под телефон*/
-@media (max-width: 320px) {
-  .top_grid {
-    max-width: 320px;
-    gap: 15px;
-    height: 300px;
-  }
-  .top_glav_disp{
-    justify-content: flex-start;
-    height: 201px;
-  }
-  .top_perv_icons {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    max-width: 768px;
-    margin: auto;
-    padding: 0;
-  }
-  .top_glav_disp_p {
-    font-size: 7px;
-  }
-  .top_glav_disp h1 {
-    font-size: 12px;
-  }
-  /* Иконки на главном экране */
-.top_perv_icons {
-  display: grid;
-  grid-template:
-    29px 32px 18px 20px 19px 11px 25px 17px /
-    64px 25px 9px 17px 5px 12px 18px 30px 23px 8px 49px;
-  grid-row: 1/2;
-  grid-column: 1/2;
-}
-.top_img1 img{
-  width: 110px;
-}
-.top_rec1 {
-  border-radius: 3px;
-  width: 18px;
-  height: 18px;
-}
-.top_rec2 {
-  border-radius: 6px;
-  width: 32px;
-  height: 32px;
-}
-.top_rec3 {
-  border-radius: 6px;
-  width: 49px;
-  height: 49px;
-}
-.top_rec4 {
-  border-radius: 6px;
-  width: 25px;
-  height: 25px;
-}
-.top_rec5 {
-  border-radius: 6px;
-  width: 17px;
-  height: 17px;
-}
-.top_img2 img{
-  width: 50px;
-}
-
-
-/* Текст */
-.top_glav_disp {
-  height: 200px;
-}
-h1 {
-  font-size: 22px;
-  margin-bottom: 11px;
-  max-width: 300px;
-}
-.top_glav_disp_p {
-  font-size: 12px;
-  max-width: 300px;
-}
-/* ---------------------- */
-/* Форма */
-.form1 {
-  margin-top: 18px;
-}
-.form1 > input {
-  border-radius: 25px 0 0 25px;
-  padding: 0px 0px 0px 21px;
-  width: 180px;
-  height: 40px;
-  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.47);
-  font-size: 12px;
-}
-.form1 input::placeholder {
-  font-size: 12px;
-}
-.form1 > button {
-  border-radius: 0 25px 25px 0;
-  width: 131px;
-  height: 40px;
-  font-size: 9px;
-
-}
-}
 
 
 /* Конец главной секции */
@@ -535,32 +332,7 @@ h2 {
   text-align: center;
   color: white;
 }
-/* Адаптивность второй секции под планшет*/
-@media (max-width: 1160px) {
-  .pochemy_mi {
-    height: 600px;
-    margin-top: 25px;
-    padding-top: px;
-  }
-  .pochemy_mi p {
-    font-size: 20px;
-    max-width: 75px;
-  }
-  h2 {
-    font-size: 24px;
-  }
-  .cards_sec_poch {
-    gap: 14.96px;
-    margin-top: 25px;
-  }
-  .card_sec_poch {
-    padding: 19px 0;
-    border-radius: 27px;
-    width: 240px;
-    height: 220px;
-    background: #262626;
-  }
-}
+
 /* Секция 3 почему мы */
 .priemysh_sec {
   padding-top: 50px;
@@ -798,51 +570,7 @@ h2 {
 .card4_sec3:hover .line_card4_sec3 {
   background: var(--dark-100);
 }
-/* Адаптация секции 3 под планшет */
-@media (max-width: 1160px) {
-  .cards_sec3 {
-    display: grid;
-    justify-items: center;
-    grid-template: repeat(4, 1fr) / 1fr;
-    gap: 60px;
-  }
-  /* Карта1 */
-  .card1_sec3 {
-    grid-row: 1/2;
-    grid-column: 1/2;
-  }
-  .card1_sec3.changed {
-    grid-row: 1/3;
-    grid-column: 1/2;
-  }
-  /* Карта2 */
-  .card2_sec3 {
-    grid-row: 2/3;
-    grid-column: 1/2;
-  }
-  .card2_sec3.changed2 {
-    grid-row: 1/3;
-    grid-column: 1/2;
-  }
-  /* Карта3 */
-  .card3_sec3 {
-    grid-row: 3/4;
-    grid-column: 1/2;
-  }
-  .card3_sec3.changed3 {
-    grid-row: 3/5;
-    grid-column: 1/2;
-  }
-  /* Карта4 */
-  .card4_sec3 {
-    grid-row: 4/5;
-    grid-column: 1/2;
-  }
-  .card4_sec3.changed4 {
-    grid-row: 3/5;
-    grid-column: 1/2;
-  }
-}
+
 /* Cекция 4 */
 .price {
   margin-top: 50px;
@@ -879,26 +607,7 @@ h2 {
 .stoke_last {
   border-bottom: none;
 }
-/* адаптация 4 секции */
-@media (max-width: 1160px) {
-  .price {
-    margin-top: 25px;
-  }
-  /* таблица */
-  .table_bord {
-    margin-top: 25px;
-    padding: 5px 20px 0px 20px;
-    font-size: 13px;
-  }
-  /* строки таблицы */
-  .stroke_tabel {
-    padding: 12px;
-    border-bottom: 1px solid #ff4c00;
-  }
-  .stroke_tabel > div {
-    width: 175px;
-  }
-}
+
 /* подвал */
 footer {
   margin: auto;
@@ -920,16 +629,7 @@ footer {
   max-width: 1160px;
 }
 
-/* адаптация подвала */
-@media (max-width: 1160px) {
-  footer {
-    margin-top: 30px;
-    padding: 23px 0;
-  }
-  .foot {
-    font-size: 14px;
-  }
-}
+
 
 /* Страница "О нас" */
 
@@ -1166,17 +866,7 @@ h2 {
   justify-content: center;
   background-image: url(./img/card_u4.png);
 }
-@media (max-width: 1600px) {
-  .nashi_uslugi_top_decor_left {
-    transform: translateX(-100%);
-  }
-  .nashi_uslugi_top_decor_right {
-    transform: translateX(100%);
-  }
-  .nashi_uslugi_top_decor_df {
-    justify-content: center;
-  }
-}
+
 
 /* Страница "Контакты" */
 
