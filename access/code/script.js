@@ -27,31 +27,29 @@ phoneLinkElement.addEventListener("click", function (event) {
     });
 });
 
-
 // Бургер меню---------------------------------------
 
-document.addEventListener('DOMContentLoaded', function() {
-  const burger = document.querySelector('.burger-menu');
-  const navMenu = document.querySelector('.nav-menu');
+document.addEventListener("DOMContentLoaded", function () {
+  const burger = document.querySelector(".burger-menu");
+  const navMenu = document.querySelector(".nav-menu");
   const body = document.body;
-  
-  burger.addEventListener('click', function() {
-    this.classList.toggle('active');
-    navMenu.classList.toggle('active');
-    body.classList.toggle('no-scroll');
+
+  burger.addEventListener("click", function () {
+    this.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    body.classList.toggle("no-scroll");
   });
-  
+
   // Закрытие меню при клике на ссылку
-  const navLinks = document.querySelectorAll('.nav-menu a');
-  navLinks.forEach(link => {
-    link.addEventListener('click', function() {
-      burger.classList.remove('active');
-      navMenu.classList.remove('active');
-      body.classList.remove('no-scroll');
+  const navLinks = document.querySelectorAll(".nav-menu a");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      burger.classList.remove("active");
+      navMenu.classList.remove("active");
+      body.classList.remove("no-scroll");
     });
   });
 });
-
 
 //-----------------Кнопка_слайдер-----------------//
 // Находим кнопку
@@ -78,28 +76,29 @@ scrollToTopBtn.addEventListener("click", function () {
 // Карты 3 секции-----------------------
 
 // Находим кнопку 1
-const button = document.getElementById("card_btn");
+if (document.getElementById("card_btn")) {
+  const button = document.getElementById("card_btn");
 
-// Обработчик события для нажатия на кнопку 1
-button.addEventListener("click", function (event) {
-  event.stopPropagation(); // Останавливаем всплытие события
+  // Обработчик события для нажатия на кнопку 1
+  button.addEventListener("click", function (event) {
+    event.stopPropagation(); // Останавливаем всплытие события
 
-  // Переключаем класс "changed"
-  if (button.classList.contains("changed")) {
-    button.classList.remove("changed"); // Если класс есть, удаляем его
-  } else {
-    button.classList.add("changed"); // Если класса нет, добавляем его
-  }
-});
+    // Переключаем класс "changed"
+    if (button.classList.contains("changed")) {
+      button.classList.remove("changed"); // Если класс есть, удаляем его
+    } else {
+      button.classList.add("changed"); // Если класса нет, добавляем его
+    }
+  });
 
-// Обработчик события для нажатия на любое место сайта
-document.addEventListener("click", function () {
-  button.classList.remove("changed"); // Убираем класс для возврата к исходному стилю
-});
-
-
+  // Обработчик события для нажатия на любое место сайта
+  document.addEventListener("click", function () {
+    button.classList.remove("changed"); // Убираем класс для возврата к исходному стилю
+  });
+}
 
 // Находим кнопку 2
+if (document.getElementById("card2_btn")) {
 const button2 = document.getElementById("card2_btn");
 
 // Обработчик события для нажатия на кнопку 1
@@ -118,11 +117,10 @@ button2.addEventListener("click", function (event) {
 document.addEventListener("click", function () {
   button2.classList.remove("changed2"); // Убираем класс для возврата к исходному стилю
 });
-
-
-
+}
 
 // Находим кнопку 3
+if (document.getElementById("card3_btn")) {
 const button3 = document.getElementById("card3_btn");
 
 // Обработчик события для нажатия на кнопку 1
@@ -141,11 +139,10 @@ button3.addEventListener("click", function (event) {
 document.addEventListener("click", function () {
   button3.classList.remove("changed3"); // Убираем класс для возврата к исходному стилю
 });
-
-
-
+}
 
 // Находим кнопку 4
+if (document.getElementById("card_btn")) {
 const button4 = document.getElementById("card4_btn");
 
 // Обработчик события для нажатия на кнопку 1
@@ -164,86 +161,47 @@ button4.addEventListener("click", function (event) {
 document.addEventListener("click", function () {
   button4.classList.remove("changed4"); // Убираем класс для возврата к исходному стилю
 });
-
-
-
-
-
-
-
-
-
-// Делаем пивязку к основной шапке
-fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            });
-
-
-
-
-
-
+}
 
 
 // Привязываем шапку к верху сайта
-document.addEventListener('DOMContentLoaded', function() {
-  const header = document.getElementById('shared-header');
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.getElementById("shared-header");
   const headerHeight = header.offsetHeight;
-  
+
   // Создаем стиль для фиксированной шапки
   const fixedHeaderStyle = {
-    position: 'fixed',
-    top: '0',
-    left: '0',
-    width: '100%',
-    backgroundColor: '#262626', // Замените на ваш цвет фона
-    zIndex: '1000',
-    boxShadow: '0 2px 5px rgba(0,0,0,0.1)'
+    position: "fixed",
+    top: "0",
+    left: "0",
+    width: "100%",
+    backgroundColor: "#262626", // Замените на ваш цвет фона
+    zIndex: "1000",
+    boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
   };
-  
+
   // Создаем элемент-плейсхолдер, чтобы контент не прыгал
-  const placeholder = document.createElement('div');
-  placeholder.style.height = headerHeight + 'px';
-  
+  const placeholder = document.createElement("div");
+  placeholder.style.height = headerHeight + "px";
+
   // Функция для обработки скролла
   function handleScroll() {
-    if (window.pageYOffset > 50) { // Начинаем фиксировать после 50px скролла
+    if (window.pageYOffset > 50) {
+      // Начинаем фиксировать после 50px скролла
       Object.assign(header.style, fixedHeaderStyle);
       header.parentNode.insertBefore(placeholder, header.nextSibling);
     } else {
-      header.removeAttribute('style');
+      header.removeAttribute("style");
       if (header.nextSibling === placeholder) {
         header.parentNode.removeChild(placeholder);
       }
     }
   }
-  
+
   // Добавляем обработчик события скролла
-  window.addEventListener('scroll', handleScroll);
-  
+  window.addEventListener("scroll", handleScroll);
+
   // Инициализация при загрузке (на случай, если страница уже прокручена)
   handleScroll();
 });
 
-// Добавляем слайдер
-$(document).ready(function () {
-  var $slider = $(".slider").slick({
-    dots: false,
-    arrows: false,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true,
-  });
-
-  // Назначаем обработчики для ваших кнопок
-  $(".strengle:first-child button").click(function () {
-    $slider.slick("slickPrev");
-  });
-
-  $(".strengle:last-child button").click(function () {
-    $slider.slick("slickNext");
-  });
-});

@@ -69,7 +69,7 @@
     z-index: 1000;
     overflow-y: auto;
   }
-  
+
   .nav-menu.active {
     right: 0;
   }
@@ -577,8 +577,7 @@
     height: 100%;
   }
   .bottom_map {
-    max-height: 680px; 
-
+    max-height: 680px;
   }
   /* Оформление для Заголовка */
   .map_site h2 {
@@ -594,5 +593,139 @@
     padding: 20px 0 0 25px;
     top: 220px;
     left: 40%;
+  }
+
+  /* Информация сeкция 2*/
+  .uslug_center1 {
+    margin-top: 15px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  .info_center1 {
+    gap: 18px;
+  }
+  .info_center1_txt {
+    max-width: 300px;
+    margin: auto;
+  }
+  .info_center1_txt h3 {
+    font-size: 16px;
+  }
+  .info_center1_txt p {
+    font-size: 10px;
+  }
+  .info_center1_img {
+    width: 223px;
+    height: 168px;
+    margin: auto;
+  }
+  .info_center1_img img {
+    width: 223px;
+    height: 168px;
+    left: 15px;
+    top: 15px;
+  }
+  /* Информация сeкция 3*/
+  .uslug_center2 {
+    margin-top: 15px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  .info_center2 {
+    gap: 18px;
+  }
+  .info_center2_txt {
+    max-width: 300px;
+    margin: auto;
+  }
+  .info_center2_txt h3 {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .info_center2_txt p {
+
+    font-size: 10px;
+  }
+  .info_center2_img {
+    width: 223px;
+    height: 168px;
+    margin: auto;
+
+  }
+  .info_center2_img img {
+    width: 223px;
+    height: 168px;
+    left: 15px;
+    top: 15px;
+  }
+  /* Информация сeкция 4*/
+  .uslug_center3 {
+    margin-top: 15px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  .info_center3 {
+    gap: 18px;
+  }
+  .info_center3_txt {
+    max-width: 300px;
+    margin: auto;
+  }
+  .info_center3_txt h3 {
+    font-size: 16px;
+  }
+  .info_center3_txt p {
+    font-size: 10px;
+  }
+  .info_center3_img {
+    width: 223px;
+    height: 168px;
+    margin: auto;
+  }
+  .info_center3_img img {
+    width: 223px;
+    height: 168px;
+    left: 15px;
+    top: 15px;
+  }
+  /* Информация сeкция 5*/
+  .uslug_center4 {
+    margin-top: 15px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  .info_center4 {
+    gap: 18px;
+  }
+  .info_center4_txt {
+    max-width: 300px;
+    margin: auto;
+  }
+  .info_center4_txt h3 {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .info_center4_txt p {
+    font-size: 10px;
+  }
+  .info_center4_img {
+    width: 223px;
+    height: 168px;
+    margin: auto;
+
+  }
+  .info_center4_img img {
+    width: 223px;
+    height: 168px;
+    left: 15px;
+    top: 15px;
   }
 }
