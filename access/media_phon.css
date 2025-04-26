@@ -176,6 +176,10 @@
     height: 40px;
     font-size: 10px;
   }
+  #success_message{
+    top: 365px;
+    font-size: 12px;
+  }
 }
 /* Адаптивность второй секции под телефон*/
 @media (max-width: 680px) {

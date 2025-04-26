@@ -51,6 +51,34 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+
+// Заказать звонок-----------------------------------
+
+document.getElementById('call_order_btn').addEventListener('click', function() {
+  const phoneInput = document.getElementById('phone_input');
+  const successMessage = document.getElementById('success_message');
+  
+  // Проверяем, заполнен ли номер телефона
+  if(phoneInput.value && phoneInput.value.length >= 5) {
+    // Показываем сообщение
+    successMessage.style.display = 'block';
+    
+    // Скрываем сообщение через 3 секунды
+    setTimeout(function() {
+      successMessage.style.display = 'none';
+    }, 3000);
+    
+    // Очищаем поле ввода (опционально)
+    phoneInput.value = '';
+  } else {
+    alert('Пожалуйста, введите корректный номер телефона');
+  }
+});
+
+
+
+
 //-----------------Кнопка_слайдер-----------------//
 // Находим кнопку
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");

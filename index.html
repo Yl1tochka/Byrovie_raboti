@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Пере-Бур</title>
-    <title>Пере-Бур</title>
     <meta name="description" content="Главная страница компании Пере-бур">
     <meta name="keywords" content="Бурение, приемушество, ГНБ, Сервис">
     <meta name="author" content="Не граненный Алмаз">
     <link rel="stylesheet" href="./access/style.css" />
     <link rel="stylesheet" href="./access/media_tab.css" />
     <link rel="stylesheet" href="./access/media_phon.css" />
+    <link rel="icon" href="./access/img/title.png" type="image/x-icon">
     <script defer src="./access/code/script.js"></script>
   </head>
   <body>
@@ -63,10 +63,14 @@
               <input
                 type="number"
                 name="number_zakaz"
-                id=""
+                id="phone_input"
                 placeholder="+7 (000) 000-00-00"
+                required
               />
-              <button class="btn_glav_disp">Заказать звонок</button>
+              <button type="button" class="btn_glav_disp" id="call_order_btn">Заказать звонок</button>
+              <div id="success_message"">
+                Ваш номер отправлен на рассмотрение
+              </div>
             </form>
           </div>
           <!-- Плитки дизайна и картинки -->
