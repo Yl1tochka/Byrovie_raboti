@@ -118,6 +118,7 @@ nav a:active {
   display: none;
   /* Скрываем сообщение по умолчанию */
   position: fixed;
+  right: 380px;
   top: 16px;
   z-index: 1000;
 }
