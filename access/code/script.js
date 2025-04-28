@@ -33,13 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const burger = document.querySelector(".burger-menu");
   const navMenu = document.querySelector(".nav-menu");
   const body = document.body;
-
   burger.addEventListener("click", function () {
     this.classList.toggle("active");
     navMenu.classList.toggle("active");
     body.classList.toggle("no-scroll");
   });
-
   // Закрытие меню при клике на ссылку
   const navLinks = document.querySelectorAll(".nav-menu a");
   navLinks.forEach((link) => {
@@ -50,8 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-
 
 // Заказать звонок-----------------------------------
 if (document.getElementById('call_order_btn')) {
