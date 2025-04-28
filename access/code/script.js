@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Заказать звонок-----------------------------------
-if (document.getElementById("card2_btn")) {
+if (document.getElementById('call_order_btn')) {
 document.getElementById('call_order_btn').addEventListener('click', function() {
   const phoneInput = document.getElementById('phone_input');
   const successMessage = document.getElementById('success_message');
