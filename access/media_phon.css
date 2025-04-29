@@ -38,9 +38,17 @@
     font-size: 16px;
   }
   .message {
+    text-align: center;
+    width: 200px;
+    z-index: 1000;
+    color: var(--primary);
+    font-weight: bold;
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 14px;
-    top: 12px;
-    right: 60px;
+    top: 20px;
   }
   .line_header {
     height: 1px;
@@ -176,7 +184,7 @@
     height: 40px;
     font-size: 10px;
   }
-  #success_message{
+  #success_message {
     top: 365px;
     font-size: 12px;
   }
@@ -651,14 +659,12 @@
     font-size: 16px;
   }
   .info_center2_txt p {
-
     font-size: 10px;
   }
   .info_center2_img {
     width: 223px;
     height: 168px;
     margin: auto;
-
   }
   .info_center2_img img {
     width: 223px;
@@ -724,7 +730,6 @@
     width: 223px;
     height: 168px;
     margin: auto;
-
   }
   .info_center4_img img {
     width: 223px;

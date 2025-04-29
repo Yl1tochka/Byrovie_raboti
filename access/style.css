@@ -113,14 +113,17 @@ nav a:active {
 }
 /* Сообщение при копировании */
 .message {
+  z-index: 1000;
   color: var(--primary); /* Цвет сообщения */
   font-weight: bold; /* Жирный текст */
   display: none;
   /* Скрываем сообщение по умолчанию */
-  position: fixed;
-  right: 380px;
+  position: absolute;
+  font-size: 22px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   top: 16px;
-  z-index: 1000;
+
 }
 /* ------------------------------ */
 /* Линия внизу шапки  */
